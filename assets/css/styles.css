@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color:#0F1B4C;
+    --primary-width:1110px;
+}
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Poppins;
+}
+/* Common */ 
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    color:#fff;
+    font-size: 1.4rem;
+    background-color: var( --primary-color);
+    padding: 13px 18px;
+    border-radius: 12px;
+    min-width:98px;
+}
+
+
+.header {
+    position: relative;
+    background: #E6F0FF;
+
+}
+.content {
+    width:var(--primary-width);
+    max-width:100%;
+    height:100vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 47px;
+}
+
+.navbar img {
+    width: 107px;
+    height: 24px;
+    margin-right: 64.47px;
+    /* background: #000228;     */
+}
+
+.navbar ul {
+    display: flex;
+}
+.navbar li a {
+    padding: 14px 14px;
+}
+.navbar ul a {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:#4F5361;
+}
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+.actions {
+    margin-left: auto;
+}
+
+.action-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:var( --primary-color);
+    margin-right: 1.8rem;
+}
+
+.action-btn {
+    padding: 8px 18px;
+}
+
+/* Hero */
+.hero {
+    width:51%;
+    margin-top: 126px;
+}
+.hero .sub-title {
+    font-size: 1.8rem;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+.hero .heading {
+    font-weight: 700;
+    font-size: 6.3rem;
+    line-height: 76px;
+    /* or 119% */
+    color: #000336;
+    margin-top:8px;
+    margin-bottom:30px;
+}
+.hero .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 32px;
+    /* or 178% */
+    color: #5A6473;
+    margin-bottom: 40px;
+}
+.btn-hero {
+    min-width:160px;
+    padding: 17px 24px;
+}
+
+.hero img{
+    position: absolute; 
+    right: calc((100vw - var(--primary-width)) / 2 - 100px ); 
+    /* 1349 - 1110 = 239 /2 = 120 - 100 = 20 */
+    bottom:0;
+
+}
+
+/* =====Client===== */
+
+.client {
+    width:var(--primary-width);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 122px;
+}
+
+.client-content {
+    display: flex;
+    /* justify-content: space-around; */
+}
+.client-content-right {
+    margin-left:auto;
+}
+.client-content-left p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-top: 23px;
+}
+
+.client-content-right p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7D8589;
+    margin-top: 18px;
+}
+.client-content-img {
+    text-align: right;
+}
+.client-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 72px;
+}
+.client-logo-child {
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+    padding: 0px 42px;
+    height: 80px; 
+}
+.client-logo-child:first-child {
+    transform: translateX(-17%);
+    /* margin-right: -18px; */
+}
+.client-logo-child:last-child {
+    transform: translateX(12%);
+}
+.client-logo-child:nth-child(2) {
+    margin-right:2px;
+}
+.client-logo-child:nth-child(3) {
+    transform: translateY(7%);
+
+}
+.client-logo-child:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
