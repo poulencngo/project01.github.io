@@ -5,6 +5,7 @@
 :root {
     --primary-color:#0F1B4C;
     --primary-width:1110px;
+
 }
 html {
     font-size:62.5%;
@@ -27,6 +28,13 @@ a {
     padding: 13px 18px;
     border-radius: 12px;
     min-width:98px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.text-center {
+    text-align: center;
 }
 
 
@@ -83,8 +91,12 @@ a {
 
 .action-btn {
     padding: 8px 18px;
+    border-radius:8px;
 }
-
+.action-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
 /* Hero */
 .hero {
     width:51%;
@@ -117,7 +129,6 @@ a {
     min-width:160px;
     padding: 17px 24px;
 }
-
 .hero img{
     position: absolute; 
     right: calc((100vw - var(--primary-width)) / 2 - 100px ); 
@@ -133,6 +144,7 @@ a {
     margin-left:auto;
     margin-right:auto;
     margin-top: 122px;
+    /* height:100vh; */
 }
 
 .client-content {
@@ -189,5 +201,184 @@ a {
 .client-logo-child:hover {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+
+/* ====Guilds==== */
+.guilds .sub-heading {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 35px;
+    /* or 100% */
+
+    color: #000339;
+    margin-bottom: 20px;
+    margin-top:174px;
+}
+.guilds .sub-heading:before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background: #000339;
+    content: "";
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+
+}
+.guilds .content {
+    width:var(--primary-width);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.guilds .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 30px;
+    /* or 188% */
+    color: #5A6473;
+    width:459px;
+    max-width:100%;
+    margin:0 auto;
+}
+
+.logo-guilds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.guilds-child {
+    margin:0 70px;
+}
+.guilds-child h3 {
+    margin-bottom: 10px;
+    margin-top: 24px;
+
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 22px;
+    color: #3B3C45;
+}
+.guilds-child a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+    color: #0689FF;
+}
+.guilds-child-buy {
+    min-width:140px;
+}
+.guilds-child span {
+    display: inline-block;
+    transform: translateX(-3px);
+}
+.btn-guilds {
+    margin-top: 50px;
+    text-align: center;
+}
+.btn-guilds a {
+    font-size: 1.3rem;
+    min-width: 170px;
+    padding: 17px 24px;
+}
+
+
+/* ====Featured====== */
+
+.featured {
+    background: #F5FAFE;
+
+}
+.content {
+    width:var(--primary-width);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.featured h2 {
+    padding-top: 110px;
+    margin-bottom:10px;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.featured p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5A6473;
+}
+.featured-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+}
+
+.featured-desc a {
+    color: #0689FF;
+    margin-left:auto;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-right:8px;
+}
+.featured-item > img {
+    min-width:350px;
+    min-height:227px;
+    background:#ccc;
+}   
+
+.featured-list {
+    display: flex;
+}
+.featured-item {
+    min-height:350px;
+    margin:0 15px;
+}
+
+.featured-item h3 {
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 1;
+    color: #000339;
+}
+.featured-item p {
+    width:292px;    
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #A3A6AB;
+    
+    margin-bottom:20px;
+}
+.featured-item span {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+    margin-right: 10px;
+}
+.featured-item-box {
+    padding: 17px 20px 22px 20px;
+}
+.featured-item-box h3 {
+    margin-bottom: 11px;
+}
+.featured-item-desc {
+    background: #FFFFFF;
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
     border-radius: 12px;
 }
